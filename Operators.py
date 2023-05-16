@@ -49,3 +49,5 @@ print(not x)
 
 print("A">"B" or "B"<"F") #True
 print(16 <= 4**2 or 9**(0.5) != 3) #True
+
+print(not 42 == "Answer") #True
