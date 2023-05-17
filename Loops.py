@@ -86,3 +86,11 @@ def elevator_floor(enter, exit):
 
 print(elevator_floor(1,4)) # Should print Going up: 1 | 2 | 3 | 4
 print(elevator_floor(6,2)) # Should print Going down: 6 | 5 | 4 | 3 | 2
+
+for sum in range(5):
+    sum += sum
+    print(sum)
+
+for x in range(10):
+    for y in range(x):
+        print(y)
