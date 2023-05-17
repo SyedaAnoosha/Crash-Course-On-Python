@@ -26,9 +26,17 @@ print(name.lstrip()) #"Syeda Anoosha   "
 print(name.rstrip()) #"   Syeda Anoosha"
 
 # {} placeholder and format() examples below:
+# > - align text to right
+# < - align text to left
 
 txt = "For only {price:.2f} dollars!"
 print(txt.format(price = 49.987)) #For only 49.99 dollars!
+
+def to_celsius(x):
+    return (x-32)*5/9
+
+for x in range(0,101,10):
+    print("{:>3} F | {:>6.2f} C".format(x, to_celsius(x)))
 
 name1="Syeda Anoosha"
 roll_no = "21sw004"
@@ -37,7 +45,7 @@ print(("Hello I am {}. My roll number is {}.").format(name1,roll_no))
 example = "format() method"
 formatted_string = "this is an example of using the {} on a string".format(example)
 print(formatted_string) #this is an example of using the format() method on a string
-
+# >-
 #If the placeholders indicate a number, they’re replaced by the variable corresponding to that order (starting at zero).
 first = "apple"
 second = "banana"
@@ -54,4 +62,14 @@ def replace_domain(email, old_domain, new_domain):
     return email
 print(replace_domain("anushazaidi06@gmail.com","gmail.com","hotmail.com"))
 
-
+def replace_ending(sentence, old, new):
+    if sentence.endswith(old):
+        i = len(sentence) - len(old)
+        new_sentence = sentence[:i]  + new
+        return new_sentence
+    return sentence
+    
+print(replace_ending("It's raining cats and cats", "cats", "dogs")) 
+# Should display "It's raining cats and dogs"
+print(replace_ending("She sells seashells by the seashore", "seashells", "donuts")) 
+# Should display "She sells seashells by the seashore" as "seashells" is not end of string
