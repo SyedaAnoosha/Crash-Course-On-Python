@@ -11,12 +11,18 @@ del animals["lions"] #del deletes the whole key-value pair
 print(animals) #{'bears': 10, 'tigers': 35, "hyenas":3, "dogs":6} 
 
 #iteration
+for animal in animals:
+    print(animal)
+
 for key,value in animals.items():
     print("{} : {}".format(key,value))
 
+print("\n",animals.keys(),"\n")
+print(animals.values())
+
 animal1 = animals.copy()
 print(animal1)
-animals.clear()
+# animals.clear()
 
 
 def list_full_names(employee_dictionary):
@@ -27,3 +33,13 @@ def list_full_names(employee_dictionary):
     return(full_names)
 print(list_full_names({"Ali": ["Muhammad", "Amir", "Malik"], "Devi": ["Ram", "Amaira"], "Chen": ["Feng", "Li"]}))
 # Should print ['Muhammad Ali', 'Amir Ali', 'Malik Ali', 'Ram Devi', 'Amaira Devi', 'Feng Chen', 'Li Chen']
+
+def count_letters(text):
+    result = {}
+    for letter in text:
+        if letter not in result:
+            result[letter] = 0
+        result[letter] += 1
+    return result
+
+print(count_letters("anoosha"))
