@@ -1,3 +1,4 @@
+#Strings are sequences of characters and are immutable. 
 #String Functions 
 
 fruit = "Mangosteen"
