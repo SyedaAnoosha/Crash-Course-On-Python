@@ -18,7 +18,8 @@ print(fruit.count("e")) #2
 print(fruit.split()) #['Mangosteen']
 print(fruit.split("Mango")) #['', 'steen']
 print(fruit.replace("steen","")) #Mango
-
+print(" ".join(["Mangosteen","has","a","sweet-and-sour","flavor"])) #Mangosteen has a sweet-and-sour flavor
+print("...".join(["Mangosteen","has","a","sweet-and-sour","flavor"])) #Mangosteen...has...a...sweet-and-sour...flavor
 name = "   Syeda Anoosha   "
 print(name.strip()) #"Syeda Anoosha"
 print(name.lstrip()) #"Syeda Anoosha   "
