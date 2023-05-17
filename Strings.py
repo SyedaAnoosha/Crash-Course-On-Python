@@ -16,7 +16,7 @@ print(fruit.isnumeric()) #False
 print(fruit.isalpha()) #True
 print(fruit.count("e")) #2
 print(fruit.split()) #['Mangosteen']
-print(fruit.split("Mango")) #['', 'steen']
+print("Mangosteen has a sweet-and-sour flavor".split()) #['Mangosteen', 'has', 'a', 'sweet-and-sour', 'flavor']
 print(fruit.replace("steen","")) #Mango
 print(" ".join(["Mangosteen","has","a","sweet-and-sour","flavor"])) #Mangosteen has a sweet-and-sour flavor
 print("...".join(["Mangosteen","has","a","sweet-and-sour","flavor"])) #Mangosteen...has...a...sweet-and-sour...flavor
@@ -29,6 +29,10 @@ print(name.rstrip()) #"   Syeda Anoosha"
 
 txt = "For only {price:.2f} dollars!"
 print(txt.format(price = 49.987)) #For only 49.99 dollars!
+
+name1="Syeda Anoosha"
+roll_no = "21sw004"
+print(("Hello I am {}. My roll number is {}.").format(name1,roll_no))
 
 example = "format() method"
 formatted_string = "this is an example of using the {} on a string".format(example)
