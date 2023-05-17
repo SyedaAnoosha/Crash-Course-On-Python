@@ -8,6 +8,14 @@ def hint_username(username):
 hint_username("Me")
 hint_username("Anoosha04")
 
+def is_positive(number):
+  if number > 0:
+    return True
+  else:
+    False
+
+print(is_positive(-40))
+
 #elif
 def translate_error_code(error_code):
     if error_code == "401 Unauthorized":
