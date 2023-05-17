@@ -31,6 +31,9 @@ def convert_seconds (seconds):
     minutes = (seconds - hours * 3600) // 60
     remaining_seconds = seconds - hours * 3600 - minutes * 60
     return hours, minutes, remaining_seconds
+result1 = convert_seconds(4938)
+print(type(result1))
+print(result1)
 
 hours, minutes, seconds = convert_seconds(6003)
 print(hours, minutes, seconds)
