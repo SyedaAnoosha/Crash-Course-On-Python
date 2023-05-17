@@ -74,3 +74,15 @@ print(replace_ending("It's raining cats and cats", "cats", "dogs"))
 # Should display "It's raining cats and dogs"
 print(replace_ending("She sells seashells by the seashore", "seashells", "donuts")) 
 # Should display "She sells seashells by the seashore" as "seashells" is not end of string
+
+
+def pig_latin(text):
+  say = ""
+  words = text.split()
+  for word in words:
+    word = word[1:] + word[0] + "ay"
+    say += word+" "
+  return say
+		
+print(pig_latin("hello how are you")) # Should be "ellohay owhay reaay ouyay"
+print(pig_latin("programming in python is fun")) # Should be "rogrammingpay niay ythonpay siay unfay"

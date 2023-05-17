@@ -51,6 +51,17 @@ print(lengths) # [9, 5, 10, 6]
 three_multilpes=[ z for z in range(1,50,1) if z%3 == 0]
 print(three_multilpes)  #[3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48]
 
-print(fruits.reverse())
-print(fruits.sort())
-print(fruits.clear())
+filenames = ["program.c", "stdio.hpp", "sample.hpp", "a.out", "math.hpp", "hpp.out"]
+# Generate newfilenames as a list containing the new filenames using as many lines of code as your chosen method requires.
+newfilenames = [filename[:-3]+"h" if filename.endswith("hpp") else filename for filename in filenames ]
+
+print(newfilenames) 
+# Should be ["program.c", "stdio.h", "sample.h", "a.out", "math.h", "hpp.out"]
+
+def group_list(group, users):
+  members = ", ".join(users)
+  return group + ": " + members
+
+print(group_list("Marketing", ["Mike", "Karen", "Jake", "Tasha"])) # Should be "Marketing: Mike, Karen, Jake, Tasha"
+print(group_list("Engineering", ["Kim", "Jay", "Tom"])) # Should be "Engineering: Kim, Jay, Tom"
+print(group_list("Users", "")) # Should be "Users:"
