@@ -65,3 +65,15 @@ def group_list(group, users):
 print(group_list("Marketing", ["Mike", "Karen", "Jake", "Tasha"])) # Should be "Marketing: Mike, Karen, Jake, Tasha"
 print(group_list("Engineering", ["Kim", "Jay", "Tom"])) # Should be "Engineering: Kim, Jay, Tom"
 print(group_list("Users", "")) # Should be "Users:"
+
+def fashionably_late(arrivals, name):
+    """Given an ordered list of arrivals to the party and a name, return whether the guest with that
+    name was fashionably late.
+    """
+    num = arrivals.index(name)
+    return (len(arrivals) // 2 < num and (num != len(arrivals)-1))
+      
+
+party_attendees = ['Adela', 'Fleda', 'Owen', 'May', 'Mona', 'Gilbert', 'Ford']
+
+print(fashionably_late(party_attendees,"Ford"))

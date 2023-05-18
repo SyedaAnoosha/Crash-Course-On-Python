@@ -1,6 +1,7 @@
 # Tuples are sequences of elements of any type that are immutable. We write tuples in parentheses instead of square brackets.
 # when using tuples the position of the elements inside the tuple have meaning
-#
+# Often used for functions that have multiple return values.
+
 full_name = ('Syeda','Anoosha','Iqtidar')
 first_name, middle_name,last_name = full_name
 print(full_name)
