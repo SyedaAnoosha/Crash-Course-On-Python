@@ -6,3 +6,4 @@ int_valur = int(batch)
 
 # Python does itself for int nad float data types: implicit conversion
 print(7 + 8.5)
+
