@@ -77,3 +77,16 @@ def fashionably_late(arrivals, name):
 party_attendees = ['Adela', 'Fleda', 'Owen', 'May', 'Mona', 'Gilbert', 'Ford']
 
 print(fashionably_late(party_attendees,"Ford"))
+
+
+# Create list areas
+areas = [11.25, 18.0, 20.0, 10.75, 9.50]
+
+# Create areas_copy
+areas_copy = areas[:] # by using this [:] we have created another list areas_copy and all the changes in it will not effect the original list
+
+# Change areas_copy
+areas_copy[0] = 5.0
+
+# Print areas
+print(areas)
