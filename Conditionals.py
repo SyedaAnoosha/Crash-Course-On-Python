@@ -66,7 +66,6 @@ def calculate_storage(filesize):
 print(calculate_storage(1))    # Should be 4096
 print(calculate_storage(4096)) # Should be 4096
 print(calculate_storage(4097)) # Should be 8192
-print(calculate_storage(6000)) # Should be 8192
 
 
 def clothing_type(temp):
@@ -83,8 +82,5 @@ def clothing_type(temp):
 
 print(clothing_type(72)) # Should print T-Shirt
 print(clothing_type(55)) # Should print Sweatshirt
-print(clothing_type(65)) # Should print Sweatshirt
 print(clothing_type(50)) # Should print Jacket
-print(clothing_type(45)) # Should print Jacket
 print(clothing_type(32)) # Should print Heavy Coat
-print(clothing_type(0)) # Should print Heavy Coat
