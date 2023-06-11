@@ -61,32 +61,6 @@ def greet_friends(friends):
 greet_friends("Barry")
 greet_friends(['Taylor', 'Luisa', 'Jamaal', 'Eli'])
 
-
-
-# This function will accept two integer variables: the floor number that a passenger "enter"s an elevator and the floor
-# number the passenger is going to "exit". Then, the function counts up or down from the two floor numbers.
-def elevator_floor(enter, exit):
-    floor = enter
-    elevator_direction = ""
-    if enter > exit:
-        elevator_direction = "Going down: "
-        while floor >= exit:
-            elevator_direction += str(floor)
-            if floor > exit:
-                elevator_direction += " | "
-            floor -= 1
-    else:
-        elevator_direction = "Going up: "
-        while floor <= exit:
-            elevator_direction += str(floor)
-            if floor < exit:
-                elevator_direction += " | "
-            floor += 1
-    return elevator_direction
-
-print(elevator_floor(1,4)) # Should print Going up: 1 | 2 | 3 | 4
-print(elevator_floor(6,2)) # Should print Going down: 6 | 5 | 4 | 3 | 2
-
 for sum in range(5):
     sum += sum
     print(sum)
@@ -94,3 +68,17 @@ for sum in range(5):
 for x in range(10):
     for y in range(x):
         print(y)
+        
+# for loop for lists
+
+areas = [11.25, 18.0, 20.0, 10.75, 9.50]
+for index, area in enumerate(areas) :
+    print("room " + str(index+1) + ": " + str(area))
+
+house = [["hallway", 11.25], 
+         ["kitchen", 18.0], 
+         ["living room", 20.0], 
+         ["bedroom", 10.75], 
+         ["bathroom", 9.50]]
+for x,y in house:
+    print("the "+x+" is "+str(y)+" sqm")
